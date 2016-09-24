@@ -177,7 +177,7 @@ Quick">
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -187,7 +187,7 @@ Quick">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -250,7 +250,7 @@ Quick">
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-08-25T00:08:27-05:00" content="2016-08-25">
               2016-08-25
             </time>
@@ -263,7 +263,7 @@ Quick">
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
                 <a href="/2016/08/25/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/08/25/hello-world/" itemprop="commentsCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/25/hello-world/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -352,11 +352,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
+      <div class="ds-thread" data-thread-key="2016/08/25/hello-world/"
+           data-title="Hello World" data-url="http://yoursite.com/2016/08/25/hello-world/">
       </div>
     
   </div>
@@ -382,10 +379,10 @@ Quick">
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Table of Contents
+            Inhaltsverzeichnis
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Overview
+            Übersicht
           </li>
         </ul>
       
@@ -402,7 +399,7 @@ Quick">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">3</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
@@ -460,7 +457,7 @@ Quick">
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
@@ -554,30 +551,30 @@ Quick">
 
   
 
-
-
+  
+    
   
 
-    <script type="text/javascript">
-      var disqus_shortname = 'yuxuyong';
-      var disqus_identifier = '2016/08/25/hello-world/';
-      var disqus_title = "Hello World";
-      var disqus_url = 'http://yoursite.com/2016/08/25/hello-world/';
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"yuxuyong"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
-      function run_disqus_script(disqus_script){
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      }
-
-      run_disqus_script('count.js');
-      
-        run_disqus_script('embed.js');
-      
-    </script>
   
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
 
 
 
