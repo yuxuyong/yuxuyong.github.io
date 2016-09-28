@@ -1,7 +1,6 @@
 "use strict";
 var fs = require("fs");
 var path = "./photos/";
-window.alert(7)
 fs.readdir(path, function (err, files) {
     if (err) {
         return;
